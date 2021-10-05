@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.TitleSection"
+        android:textColor="@color/black"
+        tools:text="Listado de peliculas" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        tools:orientation="vertical"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:spanCount="2"
+        tools:itemCount="4"
+        tools:listitem="@layout/view_vertical_movie" />
+
+</LinearLayout>
